@@ -10,11 +10,11 @@ void ATankPlayerConproller::BeginPlay()
 	auto ControlledTank = GetControlledTank();
 	if (ControlledTank)
 	{
-		UE_LOG(LogTemp, Warning, TEXT("Player posses %s tank"), *ControlledTank->GetName());
+		//UE_LOG(LogTemp, Warning, TEXT("Player posses %s tank"), *ControlledTank->GetName());
 	}
 	else
 	{
-		UE_LOG(LogTemp, Error, TEXT("Player do not posses the tank"));
+		//UE_LOG(LogTemp, Error, TEXT("Player do not posses the tank"));
 	}
 }
 

@@ -13,11 +13,11 @@ void ATanKAIController::BeginPlay()
 
 	if (ControlledTank)
 	{
-		UE_LOG(LogTemp, Warning, TEXT("AI posses the %s"), *ControlledTank->GetName())
+		//UE_LOG(LogTemp, Warning, TEXT("AI posses the %s"), *ControlledTank->GetName())
 	} 
 	else
 	{
-		UE_LOG(LogTemp, Error, TEXT("AI don`t posses tank"))
+		//UE_LOG(LogTemp, Error, TEXT("AI don`t posses tank"))
 	}
 }
  void ATanKAIController::Tick(float DeltaTime)
@@ -40,13 +40,13 @@ void ATanKAIController::AimToPlayer()
 
 	if (PlayerTank)
 	{
-		UE_LOG(LogTemp, Warning, TEXT("AI point at %s"), *PlayerTank->GetName())
+		//UE_LOG(LogTemp, Warning, TEXT("AI point at %s"), *PlayerTank->GetName())
 
 			GetControlledTank()->AimAt(PlayerTank->GetActorLocation());
 
 	} else
 	{
-		UE_LOG(LogTemp, Error, TEXT("AI don`t found player tank"))
+		//UE_LOG(LogTemp, Error, TEXT("AI don`t found player tank"))
 	}
 
 }
